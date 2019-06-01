@@ -1,7 +1,9 @@
 import Phaser from 'phaser';
-import AnimationHandler from './AnimationHandler';
 
+import CityLoader from './Scenes/City/City.loader';
 import City from './Scenes/City/City.main';
+
+
 const config = {
   width:innerWidth,
   height:innerHeight,
@@ -9,10 +11,8 @@ const config = {
     default:'arcade'
   },
   pixelArt:true,
-  scene:[City]
+  roundPixels: true,
+  scene:[CityLoader,City]
 }
 
 const game = new Phaser.Game(config);
-const animHandler = new AnimationHandler(game);
-
-export default animHandler;
