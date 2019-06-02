@@ -7,8 +7,8 @@ export default class CityAssetLoader extends Scene{
 
   preload(){
     this.load.spritesheet('player','./assets/player.png',{frameWidth:33.5,frameHeight:36})
-    this.load.tilemapTiledJSON('world','./assets/Tilemaps/Map_test.json');
-    this.load.image('tiles','./assets/world.png');
+    this.load.tilemapTiledJSON('world','./assets/Tilemaps/newMap.json');
+    this.load.image('tiles','./assets/worldFix.png');
   }
   create(){
     this.anims.create({
