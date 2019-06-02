@@ -42,7 +42,7 @@ export default class Player extends GameObjects.Sprite{
       this.anims.stop();
     }
 
-    this.body.setVelocity(dir.x * this.movementSpeed,dir.y * this.movementSpeed);
+    this.body.setVelocity(Math.floor(dir.x * this.movementSpeed),Math.floor(dir.y * this.movementSpeed));
   }
   
 }
