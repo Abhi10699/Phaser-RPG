@@ -2,7 +2,7 @@ import Phaser,{ Scene } from 'phaser';
 
 export default class CityAssetLoader extends Scene{
   constructor(){
-    super("CItyAssetLoader");
+    super("CityAssetLoader");
   }
 
   preload(){
